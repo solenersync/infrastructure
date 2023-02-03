@@ -1,0 +1,24 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: flux-system
+  namespace: flux-system
+spec:
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  interval: 1m0s
+  update:
+    strategy: Setters
+    path: ./clusters/staging
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        name: fluxbot
+        email: fluxbot@solenersync.com
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+    push:
+      branch: main
