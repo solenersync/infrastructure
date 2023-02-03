@@ -26,13 +26,13 @@ spec:
                 name: ses-demo-service
                 port:
                   number: 80
-          - pathType: Prefix
-            path: "/v1/users"
-            backend:
-              service:
-                name: userstore-service
-                port:
-                  number: 80
+#          - pathType: Prefix
+#            path: "/v1/users"
+#            backend:
+#              service:
+#                name: userstore-service
+#                port:
+#                  number: 80
   tls:
   - hosts:
     - www.solenersync.com
