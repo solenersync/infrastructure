@@ -11,8 +11,8 @@ kind: Ingress
 metadata:
   name: ses-ingress
   namespace: default
-#  annotations:
-#    cert-manager.io/cluster-issuer: letsencrypt
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx
   rules:
