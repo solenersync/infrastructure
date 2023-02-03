@@ -7,9 +7,8 @@ spec:
     email: 16728365@mail.wit.ie
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
-      #store private key
       name: letsencrypt-private-key
     solvers:
-    - http01:
-        ingress:
-          class: nginx
+      - http01:
+          ingress:
+            class: nginx
