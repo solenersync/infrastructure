@@ -4,8 +4,8 @@ metadata:
   name: letsencrypt
 spec:
   acme:
-    email: 16728365@mail.wit.ie
-    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    email: brianck26@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-private-key
     solvers:
