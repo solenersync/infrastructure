@@ -18,7 +18,7 @@ spec:
     commit:
       author:
         name: fluxbot
-        email: fluxbot@solenersync.com
+        email: fluxbot@solenersync.net
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: main
