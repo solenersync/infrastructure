@@ -11,12 +11,12 @@ kind: Ingress
 metadata:
   name: ses-ingress
   namespace: default
-#  annotations:
-#    cert-manager.io/cluster-issuer: letsencrypt
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx
   rules:
-#    - host: "www.solenersync.com"
+    - host: "www.solenersync.net"
       http:
         paths:
           - pathType: Prefix
@@ -33,7 +33,7 @@ spec:
                 name: userstore-service
                 port:
                   number: 80
-#  tls:
-#  - hosts:
-#    - www.solenersync.com
-#    secretName: solenersync-cert
+  tls:
+  - hosts:
+    - www.solenersync.net
+    secretName: solenersync-cert
