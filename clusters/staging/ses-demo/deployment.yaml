@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: ses-demo
-          image: 044135815009.dkr.ecr.eu-west-1.amazonaws.com/solenersync-ses-demo:1.0.1675451134 # {"$imagepolicy": "flux-system:solenersync-ses-demo"}
+          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-ses-demo:1.0.1675619762 # {"$imagepolicy": "flux-system:solenersync-ses-demo"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
