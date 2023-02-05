@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export AWS_PROFILE=ses-brian
+export AWS_PROFILE=ses-brian26
 wait
 export GITHUB_TOKEN=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
 wait
