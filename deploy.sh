@@ -1,6 +1,6 @@
 ***REMOVED***
 
-export AWS_PROFILE=ses-brian26
+export AWS_PROFILE=ses-admin
 ***REMOVED***
 export GITHUB_TOKEN=***REMOVED***
 ***REMOVED***
