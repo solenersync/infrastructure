@@ -14,9 +14,9 @@ export GITHUB_TOKEN=***REMOVED***
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
-#***REMOVED***
-#***REMOVED***
-#***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
