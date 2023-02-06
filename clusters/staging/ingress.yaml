@@ -30,7 +30,7 @@ spec:
             path: "/api/v1/users"
             backend:
               service:
-                name: userstore-service
+                name: user-store-service
                 port:
                   number: 80
   tls:

@@ -1,11 +1,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
-  name: solenersync-userstore
+  name: solenersync-user-store
   namespace: flux-system
 spec:
   interval: 1m
-  image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-userstore
+  image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-user-store
   accessFrom:
     namespaceSelectors:
       - matchLabels:
