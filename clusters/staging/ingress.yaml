@@ -33,6 +33,13 @@ spec:
                 name: user-store-service
                 port:
                   number: 80
+          - pathType: Prefix
+            path: "/api/v1/solar-arrays"
+            backend:
+              service:
+                name: solar-array-store-service
+                port:
+                  number: 80
   tls:
   - hosts:
     - www.solenersync.net
