@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: userstore-deployment
+  name: user-store-deployment
   namespace: default
   labels:
-    app: userstore
+    app: user-store
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: userstore
+      app: user-store
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -18,11 +18,11 @@ spec:
   template:
     metadata:
       labels:
-        app: userstore
+        app: user-store
     spec:
       containers:
-        - name: userstore
-          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-userstore:1.0.1675629065 # {"$imagepolicy": "flux-system:solenersync-userstore"}
+        - name: user-store
+          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-user-store:1.0.1675619686 # {"$imagepolicy": "flux-system:solenersync-user-store"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -30,11 +30,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: userstore-service
+  name: user-store-service
   namespace: default
 spec:
   selector:
-    app: userstore
+    app: user-store
   ports:
     - protocol: TCP
       port: 80
