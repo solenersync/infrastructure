@@ -2,7 +2,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: userstore
+  name: user-store
   namespace: flux-system
 spec:
   interval: 5m0s
@@ -10,6 +10,6 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: userstore
+    name: user-store
   targetNamespace: default
 
