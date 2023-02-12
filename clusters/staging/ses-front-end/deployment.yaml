@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: ses-front-end
-          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-ses-front-end:1.0.1676207921 # {"$imagepolicy": "flux-system:solenersync-ses-front-end"}
+          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-ses-front-end:1.0.1676208264 # {"$imagepolicy": "flux-system:solenersync-ses-front-end"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
