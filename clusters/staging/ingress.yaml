@@ -47,6 +47,13 @@ spec:
                 name: pv-service-service
                 port:
                   number: 80
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: ses-front-end-service
+                port:
+                  number: 80
   tls:
   - hosts:
     - www.solenersync.net
