@@ -2565,11 +2565,11 @@ spec:
                       OpenAPI Schema.
                     type: boolean
                   disableWait:
-                    description: DisableWait disables the ***REMOVED***ing for resources to
+                    description: DisableWait disables the waiting for resources to
                       be ready after a Helm install has been performed.
                     type: boolean
                   disableWaitForJobs:
-                    description: DisableWaitForJobs disables ***REMOVED***ing for jobs to complete
+                    description: DisableWaitForJobs disables waiting for jobs to complete
                       after a Helm install has been performed.
                     type: boolean
                   remediation:
@@ -2606,7 +2606,7 @@ spec:
                       instead."
                     type: boolean
                   timeout:
-                    description: Timeout is the time to ***REMOVED*** for any individual Kubernetes
+                    description: Timeout is the time to wait for any individual Kubernetes
                       operation (like Jobs for hooks) during the performance of a
                       Helm install action. Defaults to 'HelmReleaseSpec.Timeout'.
                     pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
@@ -2867,11 +2867,11 @@ spec:
                       Helm rollback action.
                     type: boolean
                   disableWait:
-                    description: DisableWait disables the ***REMOVED***ing for resources to
+                    description: DisableWait disables the waiting for resources to
                       be ready after a Helm rollback has been performed.
                     type: boolean
                   disableWaitForJobs:
-                    description: DisableWaitForJobs disables ***REMOVED***ing for jobs to complete
+                    description: DisableWaitForJobs disables waiting for jobs to complete
                       after a Helm rollback has been performed.
                     type: boolean
                   force:
@@ -2883,7 +2883,7 @@ spec:
                       applicable.
                     type: boolean
                   timeout:
-                    description: Timeout is the time to ***REMOVED*** for any individual Kubernetes
+                    description: Timeout is the time to wait for any individual Kubernetes
                       operation (like Jobs for hooks) during the performance of a
                       Helm rollback action. Defaults to 'HelmReleaseSpec.Timeout'.
                     pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
@@ -2925,14 +2925,14 @@ spec:
                       and 'Upgrade.IgnoreTestFailures'.
                     type: boolean
                   timeout:
-                    description: Timeout is the time to ***REMOVED*** for any individual Kubernetes
+                    description: Timeout is the time to wait for any individual Kubernetes
                       operation during the performance of a Helm test action. Defaults
                       to 'HelmReleaseSpec.Timeout'.
                     pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
                     type: string
                 type: object
               timeout:
-                description: Timeout is the time to ***REMOVED*** for any individual Kubernetes
+                description: Timeout is the time to wait for any individual Kubernetes
                   operation (like Jobs for hooks) during the performance of a Helm
                   action. Defaults to '5m0s'.
                 pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
@@ -2946,7 +2946,7 @@ spec:
                       Helm rollback action.
                     type: boolean
                   disableWait:
-                    description: DisableWait disables ***REMOVED***ing for all the resources
+                    description: DisableWait disables waiting for all the resources
                       to be deleted after a Helm uninstall is performed.
                     type: boolean
                   keepHistory:
@@ -2954,7 +2954,7 @@ spec:
                       and mark the release as deleted, but retain the release history.
                     type: boolean
                   timeout:
-                    description: Timeout is the time to ***REMOVED*** for any individual Kubernetes
+                    description: Timeout is the time to wait for any individual Kubernetes
                       operation (like Jobs for hooks) during the performance of a
                       Helm uninstall action. Defaults to 'HelmReleaseSpec.Timeout'.
                     pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
@@ -2995,11 +2995,11 @@ spec:
                       OpenAPI Schema.
                     type: boolean
                   disableWait:
-                    description: DisableWait disables the ***REMOVED***ing for resources to
+                    description: DisableWait disables the waiting for resources to
                       be ready after a Helm upgrade has been performed.
                     type: boolean
                   disableWaitForJobs:
-                    description: DisableWaitForJobs disables ***REMOVED***ing for jobs to complete
+                    description: DisableWaitForJobs disables waiting for jobs to complete
                       after a Helm upgrade has been performed.
                     type: boolean
                   force:
@@ -3041,7 +3041,7 @@ spec:
                         type: string
                     type: object
                   timeout:
-                    description: Timeout is the time to ***REMOVED*** for any individual Kubernetes
+                    description: Timeout is the time to wait for any individual Kubernetes
                       operation (like Jobs for hooks) during the performance of a
                       Helm upgrade action. Defaults to 'HelmReleaseSpec.Timeout'.
                     pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
@@ -4063,7 +4063,7 @@ spec:
                 description: Image is the name of the image repository
                 type: string
               interval:
-                description: Interval is the length of time to ***REMOVED*** between scans
+                description: Interval is the length of time to wait between scans
                   of the image repository.
                 pattern: ^([0-9]+(\.[0-9]+)?(ms|s|m|h))+$
                 type: string
@@ -5510,7 +5510,7 @@ spec:
                 - client
                 - server
                 type: string
-              ***REMOVED***:
+              wait:
                 description: Wait instructs the controller to check the health of
                   all the reconciled resources. When enabled, the HealthChecks are
                   ignored. Defaults to false.
