@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: user-store
-          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-user-store:1.0.1679439015 # {"$imagepolicy": "flux-system:solenersync-user-store"}
+          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-user-store:1.0.1679568285 # {"$imagepolicy": "flux-system:solenersync-user-store"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8081
