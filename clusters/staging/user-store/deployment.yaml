@@ -24,6 +24,22 @@ spec:
         - name: user-store
           image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-user-store:1.0.1679568285 # {"$imagepolicy": "flux-system:solenersync-user-store"}
           imagePullPolicy: Always
+          env:
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: k8s-secrets
+                  key: DB_NAME
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: k8s-secrets
+                  key: DB_PASSWORD
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: k8s-secrets
+                  key: DB_USER
           ports:
             - containerPort: 8081
 ---
