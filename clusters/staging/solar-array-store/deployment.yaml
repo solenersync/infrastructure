@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: solar-array-store
-          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-solar-array-store:1.0.1679578866 # {"$imagepolicy": "flux-system:solenersync-solar-array-store"}
+          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-solar-array-store:1.0.1679904658 # {"$imagepolicy": "flux-system:solenersync-solar-array-store"}
           imagePullPolicy: Always
           env:
             - name: DB_NAME
