@@ -23,7 +23,7 @@ spec:
       serviceAccountName: pod-update-listener
       containers:
         - name: pod-update-listener
-          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-pod-update-listener:1.0.1680448286 # {"$imagepolicy": "flux-system:solenersync-pod-update-listener"}
+          image: 975149967811.dkr.ecr.eu-west-1.amazonaws.com/solenersync-pod-update-listener:1.0.1680470531 # {"$imagepolicy": "flux-system:solenersync-pod-update-listener"}
           env:
             - name: GITHUB_REPO
               value: "solenersync/ses-front-end"
